@@ -43,7 +43,7 @@ LoanLens predicts whether an applicant is likely to default within 90 days using
 ```text
 Raw Data
    ↓
-EDA
+Exploratory data analysis
    ↓
 Feature Engineering
    ↓
