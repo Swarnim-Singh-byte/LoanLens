@@ -60,7 +60,7 @@ Streamlit App
 
 ---
 
-## Tech Stack
+
 
 ## Tech Stack
 
