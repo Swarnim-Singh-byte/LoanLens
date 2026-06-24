@@ -62,16 +62,21 @@ Streamlit App
 
 ## Tech Stack
 
+## Tech Stack
+
 | Category | Tools |
 |-----------|---------|
-| Language | Python |
-| ML | Scikit-Learn, XGBoost, LightGBM, CatBoost |
-| Data | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
+| Language | Python 3.11 |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn, Missingno |
+| Preprocessing | Scikit-Learn Pipeline, ColumnTransformer |
+| ML Models | Logistic Regression, Random Forest, LightGBM, XGBoost, CatBoost |
+| Hyperparameter Tuning | Optuna |
+| Imbalanced Learning | SMOTE (imbalanced-learn) |
 | Explainability | SHAP |
 | Fairness | Fairlearn |
-| Deployment | Streamlit |
-
+| Deployment | Streamlit, Streamlit Cloud |
+| Version Control | Git, GitHub |
 ---
 
 ## Repository Structure
