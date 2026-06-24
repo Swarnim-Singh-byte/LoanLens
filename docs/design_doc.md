@@ -161,19 +161,39 @@ Risk Prediction Dashboard
 
 # Technology Stack
 
-| Component             | Technology                     | Purpose                    |
-| --------------------- | ------------------------------ | -------------------------- |
-| Programming Language  | Python 3.11                    | Core development           |
-| Data Processing       | Pandas, NumPy                  | Data manipulation          |
-| Visualization         | Matplotlib, Seaborn, Missingno | Exploratory analysis       |
-| Machine Learning      | Scikit-Learn                   | Modeling framework         |
-| Gradient Boosting     | LightGBM, XGBoost, CatBoost    | Advanced models            |
-| Hyperparameter Tuning | Optuna                         | Automated optimization     |
-| Explainability        | SHAP                           | Model interpretation       |
-| Fairness Analysis     | Fairlearn                      | Bias assessment            |
-| Imbalanced Learning   | SMOTE (imbalanced-learn)       | Class balancing            |
-| Deployment            | Streamlit                      | Web application            |
-| Version Control       | Git & GitHub                   | Collaboration and tracking |
+## Tech Stack
+
+| Component                 | Technology                                                      | Purpose                                       |
+| ------------------------- | --------------------------------------------------------------- | --------------------------------------------- |
+| Programming Language      | Python 3.11                                                     | Core development language                     |
+| Data Processing           | Pandas, NumPy                                                   | Data manipulation and numerical computing     |
+| Exploratory Data Analysis | Matplotlib, Seaborn, Missingno                                  | Data visualization and missing value analysis |
+| Preprocessing             | Scikit-Learn ColumnTransformer, Pipeline                        | Reproducible preprocessing workflows          |
+| Machine Learning Models   | Logistic Regression, Random Forest, LightGBM, XGBoost, CatBoost | Model comparison and evaluation               |
+| Hyperparameter Tuning     | Optuna                                                          | Automated hyperparameter optimization         |
+| Explainability            | SHAP                                                            | Global and local model interpretation         |
+| Imbalanced Learning       | Imbalanced-Learn (SMOTE)                                        | Handling class imbalance                      |
+| Fairness Evaluation       | Fairlearn                                                       | Fairness and bias assessment                  |
+| Deployment                | Streamlit                                                       | Interactive web application                   |
+| Cloud Hosting             | Streamlit Cloud                                                 | Public deployment                             |
+| Version Control           | Git & GitHub                                                    | Source code management and collaboration      |
+
+---
+
+## Why This Stack?
+
+The selected technology stack is designed to cover the complete machine learning lifecycle while following industry-standard practices.
+
+* **Pandas and NumPy** will be used for data cleaning, transformation, and feature engineering.
+* **Matplotlib, Seaborn, and Missingno** will support exploratory data analysis and data quality assessment.
+* **Scikit-Learn Pipelines and ColumnTransformer** will ensure reproducible preprocessing and model workflows.
+* **LightGBM, XGBoost, and CatBoost** provide strong benchmark models for tabular machine learning tasks.
+* **Optuna** enables efficient hyperparameter optimization.
+* **SHAP** provides interpretable predictions and feature attribution.
+* **SMOTE** addresses class imbalance in the dataset.
+* **Fairlearn** supports responsible AI evaluation through fairness auditing.
+* **Streamlit** allows rapid development and deployment of a user-facing prediction interface.
+
 
 ---
 
