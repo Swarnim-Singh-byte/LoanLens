@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.ipynb_checkpoints/
+
+# Data files
+data/
+
+# macOS
+.DS_Store
