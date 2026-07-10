@@ -6,6 +6,9 @@
 
 
 > Explainable Loan Default Risk Prediction using Machine Learning
+**Problem Statement Code:** I1 — Tabular ML Zoo
+**Segment:** Foundations of Applied Machine Learning
+**Author:** Swarnim Singh (Registration No. 12410315)
 
 ## Overview
 
@@ -111,7 +114,14 @@ LoanLens/
 - Design Document: `docs/design_doc.md`
 
 ---
+## What I Learned This Week
 
+- EDA is "detective work" — before touching models, systematically asking what data I have, whether it's healthy, and what the target looks like, rather than jumping straight to feature engineering.
+- The mean of a binary (0/1) column equals its proportion of 1s — a fast way to read class imbalance (confirmed ~8% default rate) directly off `df.describe()`.
+- `missingno` visualizes patterns of missingness, not just counts — useful for spotting when features are missing together in structural blocks, which matters for imputation strategy later.
+- `df.describe()` flags data quality issues beyond summary stats — comparing mean vs median reveals skew, and min/max catches anomalies like a known `DAYS_EMPLOYED` placeholder value and an outlier `AMT_INCOME_TOTAL` of 117 million.
+- Git hygiene matters as much as the analysis — learned to properly exclude large data files and OS-specific junk (`.DS_Store`) from version control using `.gitignore`, and to verify staged changes carefully before committing.
+- And more on how a bad model on good eda is still better than a good model on bad eda.(Have also added eveything i learnt understood implemented why how in the markdown of notebook).
 ## Author
 
 **Swarnim Singh**
