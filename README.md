@@ -31,7 +31,9 @@ The project covers:
 Current phase:
 - Design Document Completed
 - Dataset Selection Completed
-- EDA In Progress
+- EDA completed
+- BaseLine model generated.
+- Need to do feature engineering and other important improvements and comparisions
 
 ## Problem Statement
 
@@ -99,9 +101,11 @@ LoanLens/
 ## Roadmap
 
 - [x] Design Document
-- [ ] EDA
+- [x] EDA
+- [x] Cleaning Data
+- [x] Preprocessing Data
 - [ ] Feature Engineering
-- [ ] Baseline Models
+- [x] Baseline Models
 - [ ] Hyperparameter Tuning
 - [ ] SHAP Analysis
 - [ ] Fairness Audit
@@ -122,6 +126,13 @@ LoanLens/
 - `df.describe()` flags data quality issues beyond summary stats — comparing mean vs median reveals skew, and min/max catches anomalies like a known `DAYS_EMPLOYED` placeholder value and an outlier `AMT_INCOME_TOTAL` of 117 million.
 - Git hygiene matters as much as the analysis — learned to properly exclude large data files and OS-specific junk (`.DS_Store`) from version control using `.gitignore`, and to verify staged changes carefully before committing.
 - And more on how a bad model on good eda is still better than a good model on bad eda.(Have also added eveything i learnt understood implemented why how in the markdown of notebook).
+- - Model accuracy can be dangerously misleading on imbalanced datasets — our baseline 
+  hit 92% accuracy but only 0.01 recall on the minority (default) class.
+- Preserving the "signal" in anomalous/missing data (e.g. a DAYS_EMPLOYED_ANOM flag) 
+  before cleaning it is important — you can fix a value without throwing away what 
+  its absence/anomaly told you.
+- Building a Scikit-Learn Pipeline with ColumnTransformer keeps preprocessing 
+  consistent between training and future prediction, and helps avoid data leakage.
 ## Author
 
 **Swarnim Singh**
