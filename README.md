@@ -83,7 +83,8 @@ Fairness Audit
 Streamlit App (live prediction + explanation)
 ```
 
-See `docs/architecture.png` for a visual diagram.
+See `<img width="3575" height="2004" alt="image" src="https://github.com/user-attachments/assets/19b7311b-0e96-480f-bad3-fd5ddc05df97" />
+` for a visual diagram.
 
 ---
 
