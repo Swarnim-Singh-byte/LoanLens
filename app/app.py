@@ -5,15 +5,17 @@ import joblib
 import json
 import shap
 import matplotlib.pyplot as plt
+import os
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
 
 st.set_page_config(page_title="LoanLens", page_icon="💳", layout="centered")
 
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("lightgbm_model.pkl")
-    preprocessor = joblib.load("preprocessor.pkl")
-    explainer = joblib.load("shap_explainer.pkl")
-    with open("defaults.json") as f:
+    model = joblib.load(os.path.join(APP_DIR, "lightgbm_model.pkl"))
+    preprocessor = joblib.load(os.path.join(APP_DIR, "preprocessor.pkl"))
+    explainer = joblib.load(os.path.join(APP_DIR, "shap_explainer.pkl"))
+    with open(os.path.join(APP_DIR, "defaults.json")) as f:
         defaults = json.load(f)
     return model, preprocessor, explainer, defaults
 
