@@ -59,33 +59,13 @@ the model made that prediction — not just the score itself.
 
 ---
 
-## Project Architecture
+## 🏗️ Project Architecture
 
-```text
-Raw Data
-   ↓
-Exploratory Data Analysis
-   ↓
-Data Cleaning
-   ↓
-Feature Engineering
-   ↓
-Preprocessing Pipeline (impute → scale/encode)
-   ↓
-Model Training (5 algorithms compared)
-   ↓
-Model Evaluation (Accuracy, Precision, Recall, F1, ROC-AUC)
-   ↓
-SHAP Explainability
-   ↓
-Fairness Audit
-   ↓
-Streamlit App (live prediction + explanation)
-```
+<p align="center">
+  <img src="docs/architecture.png" alt="LoanLens ML System Architecture" width="1000">
+</p>
 
-See `<img width="3575" height="2004" alt="image" src="https://github.com/user-attachments/assets/19b7311b-0e96-480f-bad3-fd5ddc05df97" />
-` for a visual diagram.
-
+The architecture illustrates the complete LoanLens workflow, from raw data ingestion and preprocessing to feature engineering, model training using LightGBM, deployment with Streamlit, and post-prediction explainability using SHAP along with a fairness audit.
 ---
 
 ## Tech Stack
