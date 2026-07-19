@@ -14,6 +14,7 @@
 ## Demo
 
 🔗 **Live app:** [(https://loanlens-swarnim.streamlit.app/)]
+🔗 **Demo vedio:** [(https://www.loom.com/share/3f1ae536dea04dcfb3acc9f7cc1fe2e6)]
 
 The app takes applicant details (income, credit amount, employment history,
 external credit bureau scores) and returns a default risk score along with
