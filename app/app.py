@@ -41,6 +41,14 @@ with col2:
     ext_source_2 = st.slider("External Score 2 (credit bureau)", 0.0, 1.0, 0.5)
     ext_source_3 = st.slider("External Score 3 (credit bureau)", 0.0, 1.0, 0.5)
 
+# Sanity check: can't have been employed longer than (age - 16), assuming legal working age
+max_possible_employment = max(age - 16, 0)
+if employed_years > max_possible_employment:
+    st.warning(
+        f"⚠️ With age {age}, years employed can't exceed {max_possible_employment} "
+        f"(assuming a minimum working age of 16). Please adjust your inputs."
+    )
+
 if st.button("Predict Risk", type="primary"):
     row = defaults.copy()
 
